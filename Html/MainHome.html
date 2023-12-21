@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fliopzon-Home</title>
+    <link rel="stylesheet" href="../Css/MainHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="../JavaScript/MainHome.js" defer></script>
+</head>
+<body>
+    <div id="webpageBody">
+        <nav>
+            <img id="logo" src="../Asset/Logos/FLIPZON logo.png" alt="">
+            <div id="dropandSearch">
+                <div id="dropDown">
+                    <ul id="mainlist">
+                        <li id="liofMain">
+                            All
+                            <i class="fa-solid fa-caret-down fa-beat-fade"></i>
+                            <ul id="sublist">
+                                <li class="sli">Electronics</li>
+                                <li class="sli">Clothing</li>
+                                <li class="sli">Grocery</li>
+                                <li class="sli">Home Products</li>
+                                <li class="sli">Toys & Baby</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <div id="input">
+                        <input id="searchInput" type="search" placeholder="Search Here!">
+                    </div>
+                    <i id="searchIcon" class="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+                </div>
+            </div>
+            <a id="link1" href="../index.html">
+                <div id="login">
+                    Login
+                </div>
+            </a>
+            <a id="link2" href="../Html/About.html">
+                <div id="cart">
+                   Cart
+                </div>
+            </a>
+        </nav>
+    </div>
+    <header>
+        <input class="inp" type="button" value="<" id="leftButton" onclick="dec()">
+        <input class="inp" type="button" value=">" id="rightButton" onclick="inc()">
+    </header>
+<div id="categorycontainer">
+        <div id="ccontainer" class="subcategorycontainer"> 
+            <img class="electronics" id="camera" src="../Asset/Images/Elctronics-camera.png" alt="">
+            <img class="electronics" id="ipad" src="../Asset/Images/Elctronics-ipad.png" alt="">
+            <h1 class="electronics" id="electronicsheading">Electronics</h1>
+            <img class="electronics" id="laptop" src="../Asset/Images/Elctronics-laptop.png" alt="">
+            <img class="electronics" id="mobile" src="../Asset/Images/Elctronics-mobile.png" alt="">
+        </div>
+        <div id="container" class="subcategorycontainer"> 
+            <img class="clothing" id="jacket" src="../Asset/Images/jacket.png" alt="">
+            <img class="clothing" id="dress" src="../Asset/Images/dress.png" alt="">
+            <h1 id="clothingheading" class="clothing">Clothing</h1>
+            <img class="clothing" id="pant" src="../Asset/Images/pant.png" alt="">
+            <img class="clothing" id="shirt" src="../Asset/Images/shirt.png" alt="">
+        </div>
+        <div id="container" class="subcategorycontainer"> 
+            <img id="andy" class="toys" src="../Asset/Images/toy-andy.png" alt="">
+            <img id="benwatch" class="toys" src="../Asset/Images/toy-benwatch.png" alt="">
+            <h1  id="toysheading" class="toys">Toys</h1>
+            <img id="car" class="toys" src="../Asset/Images/toy-car.png" alt="">
+            <img id="truck" class="toys" src="../Asset/Images/toy-truck.png" alt="">
+        </div>
+        <div id="container" class="subcategorycontainer"> 
+            <img id="dinechairs" class="hp" src="../Asset/Images/hp-dinechairs.png" alt="">
+            <img id="flwvase" class="hp" src="../Asset/Images/hp-flwvase.png" alt="">
+            <h1 id="hpheading" class="hp">Home Products</h1>
+            <img id="shandler" class="hp" src="../Asset/Images/hp-shandler.png" alt="">
+            <img id="walllight" class="hp" src="../Asset/Images/hp-walllight.png" alt="">
+        </div>
+        <div id="container" class="subcategorycontainer"> 
+            <img id="basket" class="groc" src="../Asset/Images/grocery-basket.png" alt="">
+            <img id="biscuit" class="groc" src="../Asset/Images/grocery-biscuits.png" alt="">
+            <h1  id="ghead" class="groc">Grocery</h1>
+            <img id="redbull" class="groc" src="../Asset/Images/grocery-redbull.png" alt="">
+            <img id="tide" class="groc" src="../Asset/Images/grocery-tide.png" alt="">
+        </div>
+    </div>
+    <div id="prodcontainer">
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/Elctronics-camera.png" alt="">
+            <h3>Canon Camera</h3>
+            <h3>price:42,000/-  (-42%)</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/Elctronics-ipad.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/Elctronics-laptop.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/Elctronics-mobile.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/grocery-basket.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/grocery-biscuits.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/grocery-redbull.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/grocery-tide.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/hp-dinechairs.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/hp-flwvase.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/hp-shandler.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/hp-walllight.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/dress.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/jacket.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/shirt.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/pant.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/toy-andy.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/toy-benwatch.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images//toy-car.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+        <div class="products">
+            <img class="imagesinpdc" src="../Asset/Images/toy-truck.png" alt="">
+            <h3>price:2000/-</h3>
+            <input type="button" value="Add Cart">
+        </div>
+    </div>       
+</body>
+</html>

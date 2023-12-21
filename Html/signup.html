@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipzon-Signup</title>
+    <link rel="stylesheet" href="../Css/signup.css">
+    <script src="../JavaScript/signup.js" defer></script>
+</head>
+<body>
+    <div class="topBlue" id="blue1"></div>
+    <div class="topBlue" id="blue2"></div>
+    <div class="topBlue" id="blue3"></div>
+    <div id="signupContainer">
+        <div id="signup">
+            <form action="">
+                <h1 id="heading">SIGNUP</h1>
+                <input id="fistname" type="type" placeholder="First Name" required>
+                <input id="lastname" type="text" placeholder="Last Name" required>
+                <input id="mailid" type="email" placeholder="User ID/Email ID" required>
+                <input id="number" type="tel" placeholder="Enter Phone Number" minlength="10" maxlength="10" required>
+                <input id="password" type="password" placeholder="Enter Password" required>
+                <input id="Conformpassword" type="password" placeholder="Conform Password" required>
+                <div>
+                <h4 class="Dob">Date Of Birth:</h4>
+                </div>
+                <div id="dob">
+                    <select  class="date" >
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select class="month" >
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select class="year" >
+                        <option>1964</option>
+                        <option>1965</option>
+                        <option>1966</option>
+                        <option>1967</option>
+                        <option>1968</option>
+                        <option>1969</option>
+                        <option>1970</option>
+                        <option>1971</option>
+                        <option>1972</option>
+                        <option>1973</option>
+                        <option>1974</option>
+                        <option>1975</option>
+                        <option>1976</option>
+                        <option>1977</option>
+                        <option>1978</option>
+                        <option>1979</option>
+                        <option>1980</option>
+                        <option>1981</option>
+                        <option>1982</option>
+                        <option>1983</option>
+                        <option>1984</option>
+                        <option>1985</option>
+                        <option>1986</option>
+                        <option>1987</option>
+                        <option>1988</option>
+                        <option>1989</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                    </select>
+                </div>
+                <h4 id="genn">Gender</h4>
+                <div id="genderDiv">
+                    <div class="gen">
+                        <label for="genderFelame">Female</label>
+                        <input id="genderFelame" type="radio" name="gender" >
+                    </div>
+                    <div class="gen">
+                        <label for="genderMale">Male</label>
+                        <input id="genderMale" type="radio" name="gender" >
+                    </div>
+                    <div class="gen">
+                        <label for="genderOther">Others</label>
+                        <input id="genderOther" type="radio" name="gender" >
+                    </div>
+                </div>
+                <h6 class="terms">Accept Terms And Conditions</h6>
+                <input class="checkbox" type="checkbox" required>
+                <input id="submit" type="Submit" onclick="storeDate()">
+                <h4> 
+                    <a href="../index.html">Already have an account?</a>
+                </h4>
+            </form>
+        </div>
+        <div id="infoSide">
+            <h1 class="heading1">Looks like you're new here!</h1>
+            <h3 class="sub">Sign up with your mobile number to get started</h3>
+             <img class="img" src="../Asset/Images/bick.png" >
+        </div>
+    </div>
+
+    <div class="bottomOrenge" id="orenageRed1"></div>
+    <div class="bottomOrenge" id="orenageRed2"></div>
+    <div class="bottomOrenge" id="orenageRed3"></div>
+</body>
+</html>

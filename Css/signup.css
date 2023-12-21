@@ -1,0 +1,371 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,rgba(237, 237, 73, 0.5),rgba(236, 206, 149, 0.5));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.topBlue,.bottomOrenge{
+    width: 80%;
+    height: 90px;
+    background-color: green;
+    border-radius: 60px;
+    transform: rotate(45deg);
+    position: absolute;
+    box-shadow:2px -3px 5px black;
+    filter: blur(2px);
+    display: flex;
+
+
+}          
+#blue1{
+    top: -50px;
+    left: -650px;
+    animation: bluebar1 2s 0.5s infinite;
+}
+@keyframes bluebar1 {
+    from{
+        transform: translate(-120px,-120px) rotate(45deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+    }
+}
+#blue2{
+    top: -80px;
+    left: -400px;
+    animation: blurbar2 2s 0.5s infinite;
+}
+@keyframes blurbar2 {
+    from{
+        transform: translate(-120px,-120px) rotate(45deg);
+
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+
+    }
+}
+#blue3{
+    top: -100px;
+    left: -100px;
+    animation: bluebar3  2s 0.5s infinite;
+}
+@keyframes bluebar3 {
+    from{
+        transform: translate(-120px,-120px) rotate(45deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+
+    }
+}
+#orenageRed1{
+    background-color: rgb(40, 181, 212);
+    bottom: -70px;
+    left:450px;
+    animation: rgbbar1 2s 0.5s infinite;
+}
+@keyframes rgbbar1 {
+    from{
+        transform: translate(120px,120px) rotate(45deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+    }
+    
+}
+#orenageRed2{
+    background-color:rgb(40, 181, 212);
+    left: 570px;
+    bottom: 150px;
+    animation: rgbbar2 2s 0.5s infinite;
+
+}
+@keyframes rgbbar2 {
+    from{
+        transform: translate(120px,120px) rotate(45deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+    }
+    
+}
+#orenageRed3{
+    background-color:rgb(40, 181, 212);
+    bottom: -250px;
+    left: 350px;
+    animation: rgbbar3 2s 0.5s infinite;
+
+}
+@keyframes rgbbar3 {
+    from{
+        transform: translate(120px,120px) rotate(45deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(45deg);
+    }
+    
+}
+#signupContainer{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(66, 46, 46, 0.32);
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#signup,#infoSide{
+    height: 100%;
+    width: 50%;
+}
+#signup{
+    width: 70%;
+    background-color:rgba(224, 255, 255, 0.6);
+}
+#heading{
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    color: orangered;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black;
+}
+#fistname{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    border-radius: 8px;
+}
+#lastname{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    border-radius: 8px;
+}
+#mailid{
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+    top: 110px;
+    border-radius: 8px;
+    background-image: url(../Asset/Logos/envelope-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 390px;
+    background-size: 20px 20px;
+}
+#number{
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    border-radius: 8px;
+    background-image: url(../Asset/Logos/phone-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 390px;
+    background-size: 20px 20px;
+}
+#password{
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+    top: 210px;
+    border-radius: 8px;
+    background-image: url(../Asset/Logos/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 390px;
+    background-size: 20px 20px;
+}
+#Conformpassword{
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+    top: 260px;
+    border-radius: 8px;
+    background-image: url(../Asset/Logos/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 390px;
+    background-size: 20px 20px;
+}
+.Dob{
+    font-size: 13px;
+    padding-left: 80px;
+    color: grey;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    position: absolute;
+    left: 5px;
+    top: 300px;
+    border-radius: 8px;
+}
+#dob,#genderDiv{
+    width: 70%;
+    height: 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    top: 320px;
+    left: 85px;
+}
+.date{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    font-weight: bold;
+    background-color: aqua; 
+}
+.month{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    font-weight: bold;
+    background-color: aqua; 
+}
+.year{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    font-weight: bold;
+    background-color: aqua; 
+}
+#genn{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 325px;
+    left: 85px;
+    color: grey;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+.gen{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    font-size: 22px; 
+    color: white;
+    font-weight: bold;
+    background-color: aqua;  
+}
+.checkbox{
+    height: 15px;
+    position: absolute;
+    left: 90px;
+    top: 420px;
+    border-radius:15px;
+} 
+.terms{
+    height: 15px;
+    position: absolute;
+    left: 107px;
+    top: 422px;
+    color: red;
+}
+#submit{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 250px;
+    top: 450px;
+    border-radius: 8px;
+    transition:  transform 1s;
+}
+#submit:hover{
+    transform: scale(1.2);
+}
+#infoSide{
+    background-color: rgba(255, 166, 0, 0.546);
+}
+.heading1{
+    position: relative;
+    font-size: 50px;
+    left: 15px;
+    top: 50px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+    font-family: 'PT Serif', serif;
+}
+.sub{
+    position: relative;
+    font-size: 30px;
+    left: 10px;
+    top: 80px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-family: 'PT Serif', serif;
+}
+.img{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left:50px;
+}
+h4{
+    width: 50%;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    position: relative;
+    top: 395px;
+    left: 180px;
+    text-decoration: none;
+}
+
+/* .account{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 215px;
+    top: 490px;
+    text-decoration: none;
+    
+    color: blue;
+} */
+input{
+    color: rgb(158, 44, 44);
+    font-weight: bold;
+    background-color: aqua;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+}

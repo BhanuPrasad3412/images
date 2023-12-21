@@ -1,0 +1,223 @@
+/* import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=PT+Serif:ital,wght@1,700&display=swap'); */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,#2C3E50,#000000);
+    background-repeat: no-repeat;
+    background-size: 100% 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+video{
+    width: 100%;
+    filter: brightness(30%);
+    position: relative;
+    z-index: 0;
+}
+span{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+#pageHeading{
+    position: absolute;
+    z-index: 5;
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#f{
+    animation: letteranimation 0.5s  backwards ;
+}
+#l{
+    animation: letteranimation 0.5s 0.2s backwards;
+}
+#i{
+    animation: letteranimation 0.5s 0.3s backwards;
+}
+#p{
+    animation: letteranimation 0.5s 0.4s backwards;
+}
+#z{
+    animation: letteranimation 0.5s 0.6s backwards;
+}
+#o{
+    animation: letteranimation 0.5s 0.7s backwards;
+}
+#n{
+    animation: letteranimation 0.5s 0.8s backwards;
+}
+@keyframes letteranimation {
+    0%,20%{
+        transform: translate(0,-150px)scale(3);
+    }
+    100%{
+        transform: translate(0,0px)scale(1);
+
+    }
+
+}
+#backgroundAnimation{
+    width: 270px;
+    height: 250px;
+    background-image: conic-gradient(#FC354C,#ff5858,#f857a6,#0ABFBC,#4b6cb7,#182848,#ff5858,#f857a6,#0ABFBC,#FC354C);
+    animation:animationBackground 15s infinite alternate;
+    filter: blur(50px);
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animationBackground {
+    0%,100%{
+        transform: rotate(360deg);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    }
+    25%{
+        border-radius: 21% 79% 26% 74% / 55% 59% 41% 45%  ;
+
+    }
+    50%{
+        border-radius: 61% 39% 59% 41% / 72% 36% 64% 28% ;
+    }
+}
+#loginForm{
+    width: 370px;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.518);
+    position: absolute;
+    border-radius: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+    text-shadow: 2px 2p 5px black;
+    cursor: pointer;
+}
+.info{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    border: 3px solid royalblue;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    left: 30px;
+    top: -30px;
+}
+.info1{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    border: 3px solid royalblue;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    left: 30px;
+}
+#result{
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+#buttom{
+    width: 30%;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(75deg,#42405b,#8681c9);
+    background-size: 800px;
+    box-shadow: 2px 2px 5px black;
+    background-position: 800px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    bottom: -40px;
+    left: 130px;
+    font-size: 16px;
+
+}
+#submit{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 200px;
+    top: 290px;
+    border-radius: 8px;
+    transition:transform 1s;
+}
+#submit:hover{
+    transform: scale(1.2);
+}
+#buttom:hover{
+    animation: buttonAnimation 1s;
+}
+@keyframes buttonAnimation {
+    0%,100%{
+        transform: rotateX(0deg) rotateY(0deg) skew(0deg,0deg);
+        background-position: 800px;
+    }
+    25%,75%{
+        transform: rotateX(20deg) rotateY(30deg) skew(10deg,20deg);
+    }
+    50%{
+        transform: rotateX(-20deg) rotateY(-30deg) skew(-10deg,-20deg);
+        background-position: 0px;
+
+    }
+}
+a{
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    position: relative;
+    bottom: -90px;
+    left: 70px;
+}

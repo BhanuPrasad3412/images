@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Skranji&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#loding{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgba(57, 63, 235,0.5),rgba(146, 33, 33, 0.5) );
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lodingtext{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+  }
+.lodingletter{
+    font-size: 10vh;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Skranji', cursive;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+.F{
+    animation: letterAnimation 0.5s 2 alternate;
+}
+.L{
+    animation: letterAnimation 0.5s 1s 2 alternate;
+}
+.I{
+    animation: letterAnimation 0.5s 2s 2 alternate;
+}
+.P{
+    animation: letterAnimation 0.5s 3s 2 alternate;
+}
+.Z{
+    animation: letterAnimation 0.5s 4s 2 alternate;
+}
+.O{
+    animation: letterAnimation 0.5s 5s 2 alternate;
+}
+.N{
+    animation: letterAnimation 0.5s 6s 2 alternate;
+}
+@keyframes letterAnimation {
+    from{
+        transform: scale(1);
+        color: white;
+    }
+    to{
+        transform: scale(3);
+        color: red ;
+    }
+}
+#loadingBar{
+    width: 70%;
+    height: 3px;
+    background-image: linear-gradient(45deg,white,white,rgb(193, 69, 69),rgb(171, 24, 24),rgb(99, 0, 0));
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    animation:lodingAnimation 6s linear;
+    position: fixed;
+    left: 15%;
+    bottom: 50%;
+      
+}
+@keyframes lodingAnimation {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 70%;
+    }
+}
+#homepage{
+    width: 100%;
+    height:30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    position: absolute;
+    bottom:100px ;
+}
+#button{
+    width: 100px;
+    height: 30px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 15, 129);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.5s;
+
+}
+#button:hover{
+    transform: scale(1.1);
+}
+#button1{
+    width: 100px;
+    height: 30px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 15, 129);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.5s;
+ 
+}
+#button1:hover{
+    transform: scale(1.1);
+}

@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current-Timer</title>
-    <link rel="stylesheet" href="./css/Timer.css">
-    <script src="./js/Timer.js" defer></script>
+    <title>Flipzon-Login</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <script src="./JavaScript/index.js" defer></script>
 </head>
 <body>
-    <div id="mainconte">
-        <div class="hero">
-            <div class="clock">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span>:</span>
-                <span id="sec">00</span>
-            </div>
+    <header>
+        <div id="pageHeading">
+            <span class="headingLetter" id="f">F</span>
+            <span class="headingLetter" id="l">l</span>
+            <span class="headingLetter" id="i">i</span>
+            <span class="headingLetter" id="p">p</span>
+            <span class="headingLetter" id="z">z</span>
+            <span class="headingLetter" id="o">o</span>
+            <span class="headingLetter" id="n">n</span>
+        </div>
+        <video src="./Asset/Video/Login.mp4" autoplay muted loop></video>
+    </header>
+    <div id="container">
+        <div id="backgroundAnimation">
+
+        </div>
+        <div id="loginForm">
+            <form action="">
+                <h1>Login</h1>
+                <input id="loginEmail" class="info" type="email" placeholder="Enter the Email" required>
+                <input id="loginPassword" class="info1" type="password" placeholder="Enter the password">
+                <p id="result"></p>
+                <input id="buttom" type="submit" value="Login" onclick="collectValue()">
+                <h4> 
+                    <a href="./Html/signup.html">Don't Have An Account?</a>
+                    <!-- <img src="./Html/MainHome.html" alt=""> -->
+                </h4>
+            </form>
         </div>
     </div>
 </body>
